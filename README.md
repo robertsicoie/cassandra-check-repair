@@ -1,11 +1,16 @@
-**Overview**
+Cassandra Check Repair
+======================
+
+Overview
+--------
 This is a simple script that scans a Cassandra cluster and checks if there are any ongoing repair jobs. If there are no repair jobs currently running, it takes a snapshot of the node and then it runs nodetool repair.
 
 The purpose of this script is to help in manually running nodetool repairs.
 
 If you want to schedule repairs you should use tools like cassandra-reaper.
  
-**Usage**
+Usage
+-----
 Copy *check-repair* to one of the nodes in your cluster.
 
 check-repair.sh <hostname> <username> <password>
