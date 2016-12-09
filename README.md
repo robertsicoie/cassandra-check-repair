@@ -13,7 +13,9 @@ Usage
 -----
 Copy *check-repair* to one of the nodes in your cluster.
 
+~~~~
 check-repair.sh <hostname> <username> <password>
+~~~~
 
 Run this script for each node of your cluster. A new repair job will not be started if there already is a running repair job.
 
